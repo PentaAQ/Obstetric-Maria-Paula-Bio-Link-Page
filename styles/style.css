@@ -1,1 +1,71 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+body main {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  border-radius: 40px;
+  background-color: #BF1F77;
+}
+body main .info {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+body main .info .info-logo {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+body main .info .info-logo img {
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 90%;
+}
+body main .info .info-descripcion {
+  text-align: center;
+}
+body main .botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+body main .botones .boton {
+  width: 330px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(189, 29, 178);
+}/*# sourceMappingURL=style.css.map */
