@@ -13,7 +13,8 @@ body {
   border-radius: 30px;
 }
 body main {
-  height: 90%;
+  position: relative;
+  height: 98%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,8 +30,19 @@ body main {
     border-radius: 0;
   }
 }
+body main .logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+@media (max-width: 768px) {
+  body main .logo {
+    top: 30px;
+    left: 20px;
+  }
+}
 body main .info {
-  width: 50%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,10 +65,37 @@ body main .info .info-logo img {
 }
 body main .info .info-descripcion {
   text-align: center;
+  margin-bottom: 20px;
+}
+body main .info .info-descripcion h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 0.9;
+}
+@media (max-width: 768px) {
+  body main .info .info-descripcion h1 {
+    font-size: 35px;
+  }
 }
 body main .info .info-descripcion p {
   color: white;
   font-weight: bold;
+  font-size: 17px;
+}
+@media (max-width: 768px) {
+  body main .info .info-descripcion p {
+    font-size: 16px;
+  }
+}
+body main .info .info-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+body main .info .info-icons i {
+  color: white;
 }
 body main .botones {
   display: flex;
